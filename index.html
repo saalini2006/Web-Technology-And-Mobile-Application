@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeNews | Vibrant Online News Portal</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body {
+      background: linear-gradient(120deg, #f6d365, #fda085);
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1d2671, #c33764);
+      color: white;
+      padding: 25px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 { font-size: 32px; letter-spacing: 1px; }
+
+    nav a {
+      color: white;
+      margin-left: 22px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover { color: #ffd369; }
+
+    .breaking {
+      background: #ff3c38;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      padding: 35px 45px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 30px;
+    }
+
+    .news-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      overflow: hidden;
+      margin-bottom: 30px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 35px rgba(0,0,0,0.25);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 18px 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: #c33764;
+      color: white;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    .content h2 {
+      margin: 8px 0;
+      color: #1d2671;
+    }
+
+    .content p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    aside {
+      background: rgba(255,255,255,0.95);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      height: fit-content;
+    }
+
+    aside h3 {
+      color: #c33764;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #c33764;
+      padding-bottom: 6px;
+    }
+
+    aside ul { list-style: none; }
+
+    aside li {
+      margin-bottom: 14px;
+      font-size: 14px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      background: linear-gradient(90deg, #43cea2, #185a9d);
+      color: white;
+      padding: 20px;
+      border-radius: 16px;
+    }
+
+    .stats div {
+      text-align: center;
+    }
+
+    .stats h4 { font-size: 22px; }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      font-size: 13px;
+      margin-top: 25px;
+    }
+
+    @media(max-width: 768px) {
+      .container { grid-template-columns: 1fr; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>VibeNews</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">World</a>
+    <a href="#">Business</a>
+    <a href="#">Technology</a>
+    <a href="#">Sports</a>
+  </nav>
+</header>
+
+<div class="breaking">🚨 BREAKING: Major policy announcement expected today | Live updates coming 🚨</div>
+
+<section class="container">
+
+  <main>
+    <div class="news-card">
+      <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c" alt="World News">
+      <div class="content">
+        <span class="tag">WORLD</span>
+        <h2>Global Leaders Meet for Climate Summit</h2>
+        <p>World leaders gather to discuss urgent climate action plans. Agreements focus on sustainability, clean energy, and economic cooperation.</p>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Technology">
+      <div class="content">
+        <span class="tag">TECH</span>
+        <h2>AI Revolutionizes Education Sector</h2>
+        <p>Artificial intelligence is reshaping classrooms with personalized learning, smart assessments, and digital classrooms.</p>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="https://images.unsplash.com/photo-1505842465776-3d90f616310d" alt="Sports">
+      <div class="content">
+        <span class="tag">SPORTS</span>
+        <h2>Championship Final Draws Millions of Viewers</h2>
+        <p>The thrilling final match captures global attention with record-breaking viewership and intense competition.</p>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div>
+        <h4>1.2M+</h4>
+        <p>Daily Readers</p>
+      </div>
+      <div>
+        <h4>85+</h4>
+        <p>Countries</p>
+      </div>
+      <div>
+        <h4>24/7</h4>
+        <p>Live Updates</p>
+      </div>
+    </div>
+  </main>
+
+  <aside>
+    <h3>Trending Now</h3>
+    <ul>
+      <li>🔥 Election results analysis</li>
+      <li>🔥 Stock market surge</li>
+      <li>🔥 Space mission success</li>
+      <li>🔥 New smartphone launch</li>
+      <li>🔥 Health advisory update</li>
+    </ul>
+  </aside>
+
+</section>
+
+<footer>
+  © 2026 VibeNews | Vibrant & Informative News Portal Project
+</footer>
+
+</body>
+</html>
